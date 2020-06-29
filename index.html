@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Keycode Project - JavaScript</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="">
+</head>
+
+<body>
+  <canvas width="128" height="128" hidden></canvas>
+  <div class="display">
+    <table class="table hide">
+      <thead>
+        <tr>
+          <th>Key Code</th>
+          <th>Key</th>
+        </tr>
+      </thead>
+      <tbody class="table-body">
+      </tbody>
+    </table>
+    <div class="wrap" aria-live="polite" aria-atomic="true">
+      <p class="keycode-display"></p>
+      <p class="text-display">Press any key to get the JavaScript event keycode</p>
+      <div class="cards hide">
+        <div class="card item-key">
+          <div class="card-header">event.key</div>
+          <div class="card-main">
+            <div class="main-description">key</div>
+          </div>
+        </div>
+        <div class="card item-location">
+          <div class="card-header">event.location
+          </div>
+          <div class="card-main">
+            <div class="main-description">location</div>
+          </div>
+        </div>
+        <div class="card item-which">
+          <div class="card-header">
+            event.which
+          </div>
+          <div class="card-main">
+            <div class="main-description">which</div>
+          </div>
+        </div>
+        <div class="card item-code">
+          <div class="card-header">event.code</div>
+          <div class="card-main">
+            <div class="main-description">code</div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-input">
+      </div>
+    </div>
+    <button onclick={toggleTable()} class="table-toggle-button">Table</button>
+  </div>
+
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
